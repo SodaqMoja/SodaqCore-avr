@@ -7,26 +7,26 @@
 // (Notice that SODAQ Mbili is equiped with VQFN44 package. The layout below is
 // just a convenience to see the port names and their usage.)
 //                                          +---\/---+
-//                             (D  8) PB0  1|        |40  PA0 (AI 0 / D24) -- [A3]
-//      [D14/DIGITAL2] --      (D  9) PB1  2|        |39  PA1 (AI 1 / D25) -- [A2]
-//      [D15/DIGITAL1] -- INT2 (D 10) PB2  3|        |38  PA2 (AI 2 / D26) -- [A1]
-//       [LED_RED] --      PWM (D 11) PB3  4|        |37  PA3 (AI 3 / D27) -- [A0]
-//        [D10/SS] --   PWM/SS (D 12) PB4  5|        |36  PA4 (AI 4 / D28) -- [BATVOLTPIN]
-//      [D11/MOSI] --     MOSI (D 13) PB5  6|        |35  PA5 (AI 5 / D29) -- [A6]
-//      [D12/MISO] -- PWM/MISO (D 14) PB6  7|        |34  PA6 (AI 6 / D30) -- [A7]
-//       [D13/SCK] --  PWM/SCK (D 15) PB7  8|        |33  PA7 (AI 7 / D31) -- [RTC_INTERRUPT]
+//                             (D 23) PB0  1|        |40  PA0 (AI 0 / D27) -- [A3]
+//      [D14/DIGITAL2] --      (D 14) PB1  2|        |39  PA1 (AI 1 / D26) -- [A2]
+//      [D15/DIGITAL1] -- INT2 (D 15) PB2  3|        |38  PA2 (AI 2 / D25) -- [A1]
+//       [LED_RED] --      PWM (D 16) PB3  4|        |37  PA3 (AI 3 / D24) -- [A0]
+//        [D10/SS] --   PWM/SS (D 10) PB4  5|        |36  PA4 (AI 4 / D30) -- [A6/BATVOLTPIN]
+//      [D11/MOSI] --     MOSI (D 11) PB5  6|        |35  PA5 (AI 5 / D28) -- [A4] (Schema A6)
+//      [D12/MISO] -- PWM/MISO (D 12) PB6  7|        |34  PA6 (AI 6 / D39) -- [A5] (Schema A7)
+//       [D13/SCK] --  PWM/SCK (D 13) PB7  8|        |33  PA7 (AI 7 / D31) -- [A7/RTC_INTERRUPT]
 //                                    RST  9|        |32  AREF
 //                                    VCC 10|        |31  GND
 //                                    GND 11|        |30  AVCC
-//                                  XTAL2 12|        |29  PC7 (D 23)     -- [D9]
-//                                  XTAL1 13|        |28  PC6 (D 22)     -- [D8]
-//       [D0/RX0] -- RX0      (D  0)  PD0 14|        |27  PC5 (D 21) TDI -- [LED_GREEN]
-//       [D1/TX0] -- TX0      (D  1)  PD1 15|        |26  PC4 (D 20) TDO -- [LED_BLUE]
-//  [RX1/LoRa_TX] -- RX1/INT0 (D  2)  PD2 16|        |25  PC3 (D 19) TMS -- [D7]
-//  [TX1/LoRa_RX] -- TX1/INT1 (D  3)  PD3 17|        |24  PC2 (D 18) TCK -- [D6]
-//           [D2] -- PWM      (D  4)  PD4 18|        |23  PC1 (D 17) SDA -- [SDA]
-//           [D3] -- PWM      (D  5)  PD5 19|        |22  PC0 (D 16) SCL -- [SCL]
-//           [D4] -- PWM      (D  6)  PD6 20|        |21  PD7 (D  7) PWM -- [D5]
+//                                  XTAL2 12|        |29  PC7 (D  9)     -- [D9]
+//                                  XTAL1 13|        |28  PC6 (D  8)     -- [D8]
+//       [D0/RX0] -- RX0      (D  0)  PD0 14|        |27  PC5 (D 17) TDI -- [LED_GREEN]
+//       [D1/TX0] -- TX0      (D  1)  PD1 15|        |26  PC4 (D 18) TDO -- [LED_BLUE]
+//  [RX1/LoRa_TX] -- RX1/INT0 (D 19)  PD2 16|        |25  PC3 (D  7) TMS -- [D7]
+//  [TX1/LoRa_RX] -- TX1/INT1 (D 20)  PD3 17|        |24  PC2 (D  6) TCK -- [D6]
+//           [D2] -- PWM      (D  2)  PD4 18|        |23  PC1 (D 22) SDA -- [SDA]
+//           [D3] -- PWM      (D  3)  PD5 19|        |22  PC0 (D 21) SCL -- [SCL]
+//           [D4] -- PWM      (D  4)  PD6 20|        |21  PD7 (D  5) PWM -- [D5]
 //                                          +--------+
 //
 
