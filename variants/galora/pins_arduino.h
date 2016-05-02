@@ -40,6 +40,7 @@
 #define NUM_ANALOG_INPUTS           8
 
 #define analogInputToDigitalPin(p)  ((p < NUM_ANALOG_INPUTS) ? (p) + 24 : -1)
+#define analogPinToChannel(p)       (((p) == A0) ? 3 : ((p) == A1) ? 2 : ((p) == A2) ? 1 : ((p) == A3) ? 0 : ((p) == A4) ? 5 : ((p) == A5) ? 6 : ((p) == A6) ? 4 : ((p) == A7) ? 7 : 0);
 
 #define digitalPinHasPWM(p)         ((p) == 2 || (p) == 3 || (p) == 4 || (p) == 5 || (p) == 10 || (p) == 12 || (p) == 13 || (p) == 16)
 
@@ -78,10 +79,10 @@ static const uint8_t A7 = 31;
 */
 
 #define digitalPinToPCICR(p)    (((p) >= 0 && (p) < NUM_DIGITAL_PINS) ? (&PCICR) : ((uint8_t *)0))
-#define digitalPinToPCICRbit(p) (pgm_read_byte_near(&(digital_pin_to_port_PGM[p])) - 1) // PCICRbit = Port Index (PA, PB, PC, PD) - 1
+#define digitalPinToPCICRbit(p) (pgm_read_byte(&(digital_pin_to_port_PGM[p])) - 1) // PCICRbit = Port Index (PA, PB, PC, PD) - 1
 
-#define digitalPinToPCMSK(p)    (pgm_read_word_near(&(port_to_PCMSK_PGM[pgm_read_byte_near(&(digital_pin_to_port_PGM[p]))])))
-#define digitalPinToPCMSKbit(p) (pgm_read_byte_near(&(digital_pin_to_port_pin_PGM[p])))
+#define digitalPinToPCMSK(p)    (pgm_read_word(&(port_to_PCMSK_PGM[pgm_read_byte(&(digital_pin_to_port_PGM[p]))])))
+#define digitalPinToPCMSKbit(p) (pgm_read_byte(&(digital_pin_to_port_pin_PGM[p])))
 
 #ifdef ARDUINO_MAIN
 
