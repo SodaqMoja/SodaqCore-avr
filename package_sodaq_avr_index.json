@@ -196,8 +196,8 @@
                 "category":"Contributed",
                 "url":"http://downloads.sodaq.net/test/sodaqboards-1.2.0.tar.bz2",
                 "archiveFileName":"sodaqboards-1.2.0.tar.bz2",
-                "checksum":"SHA-256:3b2df14fccc6f44d78f516629eb28318e303770f0b0e9fb44dcb8d6d19e841bc",
-                "size":"80402",
+                "checksum":"SHA-256:7d7a40e3241ab29cb17e99476e751bea21fdfab139f7e1998596f6c4d8e0925b",
+                "size":"80824",
                 "help":{
                     "online":"https://forums.sodaq.com"
                 },
